@@ -10,7 +10,7 @@ import Chip from "@mui/material/Chip";
 import { IconButton } from "@mui/material";
 
 //Material Icons
-import ApartmentIcon from "@mui/icons-material/Apartment";
+
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
@@ -35,19 +35,12 @@ export default function AttractionBestPlaceCard() {
   const sampleDate = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (
     <>
-      <Box sx={{ display: "flex", alignItems: "baseline" }}>
-        <Typography variant="h5">Explore the World</Typography>
-        <Box sx={{ marginLeft: "auto" }}>
-          <IconButton size={"small"} onClick={handlePrev}>
-            <ArrowBackIosIcon />
-          </IconButton>
-          <IconButton size={"small"} onClick={handleNext}>
-            <ArrowForwardIosIcon />
-          </IconButton>
-        </Box>
-      </Box>
-      <Typography variant="subtitle1">10,788 Beautiful place to go</Typography>
-
+      <Typography variant="h5">Search a best place in the world</Typography>
+      <Typography variant="h5">
+        Whether you're looking for place for a vacation. We are here to Guide
+        you about the details you need to check in and ease your trips in
+        advance
+      </Typography>
       <Swiper
         ref={sliderRef}
         slidesPerView={1}

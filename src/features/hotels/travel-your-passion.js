@@ -21,7 +21,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
 import "swiper/swiper.min.css";
 
-export default function ExploreCard() {
+export default function TravelYourPassion() {
   const sliderRef = useRef(null);
   const handlePrev = useCallback(() => {
     if (!sliderRef.current) return;
@@ -36,7 +36,7 @@ export default function ExploreCard() {
   return (
     <>
       <Box sx={{ display: "flex", alignItems: "baseline" }}>
-        <Typography variant="h5">Explore the World</Typography>
+        <Typography variant="h5">Travel Your Passion</Typography>
         <Box sx={{ marginLeft: "auto" }}>
           <IconButton size={"small"} onClick={handlePrev}>
             <ArrowBackIosIcon />
@@ -46,7 +46,9 @@ export default function ExploreCard() {
           </IconButton>
         </Box>
       </Box>
-      <Typography variant="subtitle1">10,788 Beautiful place to go</Typography>
+      <Typography variant="subtitle1">
+        Most Brilliant reasons Entrada should be your one-stop-shop!
+      </Typography>
 
       <Swiper
         ref={sliderRef}
